@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Facebook</title>
+  </head>
+  <body style="background-color: aquamarine">
+    <div style="text-align: center">
+      <h1>Lam Anh Tuan</h1>
+    </div>
+    <button id="nutBam">Bam</button>
+    <a style="text-decoration: none; color: black; cursor: crosshair;" href="https://www.facebook.com/hagasaku/">
+      <h2 id="name">Nguyen Khac Duy</h2>
+    </a>
+    <ul>
+      <li>Ca phe</li>
+      <li>Tra sua</li>
+      <li>Sting</li>
+      <li>Nuoc suoi</li>
+    </ul>
+    <style></style>
+    <script>
+      document.getElementById("nutBam").addEventListener("click", () => {
+        document.getElementById("name").textContent = "Lam Anh Thu";
+      });
+
+      document.getElementById("nutBam").addEventListener("mouseover", () => {
+        document.getElementById("name").textContent = "Lam Anh Tu";
+      });
+    </script>
+  </body>
+</html>
+<!-- Hyper Text Markup Language -->
+<!-- Do uu tien: inline, style tag, include file css -->
