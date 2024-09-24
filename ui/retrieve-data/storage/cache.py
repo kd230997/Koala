@@ -47,4 +47,4 @@ def saveFileImage(fileUrl: str, fileName: str, desFolder: str, version: str):
             with open(folderImage + "/" + fileName + ".png", "wb") as f:
                 f.write(response.read())
     except:
-        print("Error")
+        print("Error here")
