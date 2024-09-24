@@ -1,3 +1,60 @@
 h1 {
   color: red;
+  text-align: center;
+}
+
+hr {
+  color: brown;
+  background-color: brown;
+}
+
+.established {
+  text-align: center;
+}
+
+ul {
+  font-size: large;
+}
+
+.manh {
+  color: chartreuse;
+}
+
+.yeu {
+  color: crimson;
+}
+
+.anh {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.equipment {
+  text-align: right;
+}
+
+p {
+  font-size: large;
+}
+
+.giao_an {
+  padding: 0 33.3%;
+}
+
+footer {
+  text-align: center;
+}
+
+.address {
+  text-decoration: dotted;
+  margin-bottom: 5px;
+}
+
+.meo {
+  color: chartreuse
+}
+
+.ho_ten {
+  color: red;
 }
