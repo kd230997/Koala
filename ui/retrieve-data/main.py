@@ -6,10 +6,16 @@ import os
 import cv2
 import numpy as np
 
-if __name__ == "__main__":
-    # Change to parent directory
+
+def getAllInfo():
     os.chdir("..")
+    os.chdir("web")
     getChampions()
     getItems()
     getItemsImage()
     getChampionsImage()
+
+
+if __name__ == "__main__":
+    # Change to parent directory
+    getAllInfo()
