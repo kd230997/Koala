@@ -26,10 +26,13 @@ def getVersion():
 
     response = helper.get(url=API_ENDPOINT.GET_VERSION, needLang=False)
     cache.cacheResponseInFile(FILE_CACHE.VERSION, response)
+
     return response["data"]["version"][0]
 
 
-def getItems(version):
+def getItems():
+    version = getVersion()
+
     response = helper.get(url=API_ENDPOINT.GET_ITEMS, version=version)
     cache.cacheResponseInFile(FILE_CACHE.ITEMS, response)
     return response
@@ -38,28 +41,39 @@ def getItems(version):
 def getItemsImage():
     version = getVersion()
     index = 1
-    dataList = getItems(version)["data"]
+    dataList = getItems()["data"]
     for item in dataList:
         saveFileImage(
-            item["imageUrl"], item["apiName"], version=version, desFolder=FILE_CACHE.ITEMS
+            item["imageUrl"],
+            item["apiName"],
+            version=version,
+            desFolder=FILE_CACHE.ITEMS,
         )
         print(index, "Completed download " + item["imageUrl"])
         index += 1
 
 
-def getChampions(version):
+def getChampions():
+    version = getVersion()
+
     response = helper.get(url=API_ENDPOINT.GET_CHAMPIONS, version=version)
+
     cache.cacheResponseInFile(FILE_CACHE.CHAMPIONS, response)
+
     return response
 
 
 def getChampionsImage():
     version = getVersion()
+    dataList = getChampions()["data"]
+
     index = 1
-    dataList = getChampions(version)["data"]
     for item in dataList:
         saveFileImage(
-            item["imageUrl"], item["apiName"], version=version, desFolder=FILE_CACHE.CHAMPIONS
+            item["imageUrl"],
+            item["apiName"],
+            version=version,
+            desFolder=FILE_CACHE.CHAMPIONS,
         )
         print(index, "Completed download " + item["imageUrl"])
         index += 1
