@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  minio:
+    image: quay.io/minio/minio
+    environment:
+      MINIO_ROOT_USER: admin123
+      MINIO_ROOT_PASSWORD: 123456789
+    ports:
+      - "9000:9000"
+    volumes:
+      - /mnt/e/Easy-Tool/Koala/docker/minIO/data
+    command: server /mnt/e/Easy-Tool/Koala/docker/minIO/data

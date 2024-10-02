@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_USER: DUYNK12
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:

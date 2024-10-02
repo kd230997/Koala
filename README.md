@@ -1,1 +1,1 @@
-Init
+cd /mnt/e/Easy-Tool/Koala
