@@ -1,8 +1,6 @@
-import helper.log
 import config
 import http.client
 import json
-import os
 
 from helper.log import logFail
 

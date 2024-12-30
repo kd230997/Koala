@@ -1,0 +1,849 @@
+{
+	"genre": {
+		"Action": {
+			"ST1": {
+				"Engine": 1,
+				"Gameplay": 2,
+				"Story/Quest": 4
+			},
+			"ST2": {
+				"Dialogues": 5,
+				"Level Design": 2,
+				"AI": 1
+			},
+			"ST3": {
+				"World Design": 3,
+				"Graphics": 1,
+				"Sound": 2
+			}
+		},
+		"Adventure": {
+			"ST1": {
+				"Engine": 4,
+				"Gameplay": 3,
+				"Story/Quest": 1
+			},
+			"ST2": {
+				"Dialogues": 1,
+				"Level Design": 3,
+				"AI": 4
+			},
+			"ST3": {
+				"World Design": 1,
+				"Graphics": 2,
+				"Sound": 3
+			}
+		},
+		"RPG": {
+			"ST1": {
+				"Engine": 4,
+				"Gameplay": 2,
+				"Story/Quest": 1
+			},
+			"ST2": {
+				"Dialogues": 1,
+				"Level Design": 2,
+				"AI": 3
+			},
+			"ST3": {
+				"World Design": 1,
+				"Graphics": 2,
+				"Sound": 3
+			}
+		},
+		"Simulation": {
+			"ST1": {
+				"Engine": 2,
+				"Gameplay": 1,
+				"Story/Quest": 3
+			},
+			"ST2": {
+				"Dialogues": 4,
+				"Level Design": 2,
+				"AI": 1
+			},
+			"ST3": {
+				"World Design": 3,
+				"Graphics": 1,
+				"Sound": 2
+			}
+		},
+		"Strategy": {
+			"ST1": {
+				"Engine": 2,
+				"Gameplay": 1,
+				"Story/Quest": 3
+			},
+			"ST2": {
+				"Dialogues": 4,
+				"Level Design": 1,
+				"AI": 2
+			},
+			"ST3": {
+				"World Design": 1,
+				"Graphics": 3,
+				"Sound": 2
+			}
+		},
+		"Casual": {
+			"ST1": {
+				"Engine": 5,
+				"Gameplay": 1,
+				"Story/Quest": 4
+			},
+			"ST2": {
+				"Dialogues": 4,
+				"Level Design": 1,
+				"AI": 5
+			},
+			"ST3": {
+				"World Design": 4,
+				"Graphics": 1,
+				"Sound": 2
+			}
+		}
+	},
+	"audience": ["Young", "Everyone", "Mature"],
+	"combinations": {
+		"Great": 1,
+		"Good": 2,
+		"Okay": 3,
+		"Bad": 4,
+		"Terrible": 5
+	},
+	"focus": {
+		"VeryImportant": 1,
+		"QuiteImportant": 0.9,
+		"NotVeryImportant": 0.8,
+		"NotImportant": 0.7,
+		"NotAtAllImportant": 0.6
+	},
+	"topic": {
+		"Abstract": {
+			"Action": 2,
+			"Adventure": 1,
+			"RPG": 5,
+			"Simulation": 5,
+			"Strategy": 3,
+			"Casual": 5,
+			"Young": 3,
+			"Everyone": 2,
+			"Mature": 1
+		},
+		"Airplane": {
+			"Action": 1,
+			"Adventure": 5,
+			"RPG": 3,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 2
+		},
+		"Aliens": {
+			"Action": 1,
+			"Adventure": 3,
+			"RPG": 1,
+			"Simulation": 5,
+			"Strategy": 2,
+			"Casual": 4,
+			"Young": 2,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Alternate History": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Assassin": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Business": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"City": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Colonization": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Comedy": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Construction": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Cooking": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Crime": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Cyberpunk": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Dance": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Detective": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Disasters": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Dungeon": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Dystopian": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Evolution": {
+			"Action": 4,
+			"Adventure": 5,
+			"RPG": 5,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 5,
+			"Young": 3,
+			"Everyone": 3,
+			"Mature": 4
+		},
+		"Expedition": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Extreme Sports": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Farming": {
+			"Action": 5,
+			"Adventure": 4,
+			"RPG": 5,
+			"Simulation": 1,
+			"Strategy": 5,
+			"Casual": 1,
+			"Young": 2,
+			"Everyone": 1,
+			"Mature": 3
+		},
+		"Fantasy": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Fashion": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Game Dev": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Government": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Hacking": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"History": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Horror": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Hospital": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Hunting": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Law": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Life": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Mad Science": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Martial Arts": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Medieval": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 3,
+			"Strategy": 1,
+			"Casual": 4,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 2
+		},
+		"Military": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Movies": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Music": {
+			"Action": 1,
+			"Adventure": 2,
+			"RPG": 5,
+			"Simulation": 1,
+			"Strategy": 5,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 3,
+			"Mature": 2
+		},
+		"Mystery": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Mythology": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Ninja": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Pirate": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Post Apocalyptic": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Prison": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Racing": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Rhythm": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Romance": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"School": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Sci-Fi": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Space": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Sports": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Spy": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Superheroes": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Surgery": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Technology": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Thief": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Time Travel": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Transport": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"UFO": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Vampire": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Virtual Pet": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Vocabulary": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Werewolf": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Wild West": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		},
+		"Zombies": {
+			"Action": 1,
+			"Adventure": 1,
+			"RPG": 1,
+			"Simulation": 1,
+			"Strategy": 1,
+			"Casual": 1,
+			"Young": 1,
+			"Everyone": 1,
+			"Mature": 1
+		}
+	}
+}

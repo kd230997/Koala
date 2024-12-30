@@ -2,7 +2,7 @@
   "type": "cdragon-item",
   "lang": "en_US",
   "set": "13",
-  "version": "14.24b",
+  "version": "14.24",
   "categoryList": [
     "radiant",
     "artifact",
@@ -50,12 +50,12 @@
         "TFT13_Crime"
       ],
       "composition": [],
-      "desc": "At 50% Health, gain a 50% max Health Shield. Every 8 seconds afterwards, gain a 10% max Health Shield.<br><rules>Recommended users: Renni and Singed</rules>",
+      "desc": "At 50% Health, gain a 35% max Health Shield. Every 8 seconds afterwards, gain a 10% max Health Shield.<br><rules>Recommended users: Renni and Singed</rules>",
       "effects": {
         "Armor": 25,
         "Health": 350,
         "HealthThreshold": 0.5,
-        "InitialPercentShield": 0.5,
+        "InitialPercentShield": 0.3499999940395355,
         "MagicResist": 25,
         "PercentShield": 0.10000000149011612,
         "TickRate": 8,
@@ -74,7 +74,7 @@
           "Armor": 25,
           "Health": 350,
           "HealthThreshold": 0.5,
-          "InitialPercentShield": 0.5,
+          "InitialPercentShield": 0.3499999940395355,
           "MagicResist": 25,
           "PercentShield": 0.10000000149011612,
           "TickRate": 8,
@@ -82,13 +82,7 @@
         }
       },
       "_key": "TFT13_Crime_Gold_DestabilizedChemtank",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Gold_DestabilizedChemtank.png",
-      "balance": 1,
-      "diff": {
-        "effects": [
-          "InitialPercentShield%"
-        ]
-      }
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Gold_DestabilizedChemtank.png"
     },
     {
       "apiName": "TFT13_ChampionItem_Gremlin_2Star",
@@ -512,15 +506,15 @@
         "TFT13_Crime"
       ],
       "composition": [],
-      "desc": "At 50% Health, gain a 60% max Health Shield. Every 4 seconds afterwards, gain a 20% max Health Shield.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> After gaining Shield, fire a vial of chemicals at 3 nearby enemies that deals 15% max Health magic damage.<br><rules>Recommended users: Renni and Singed</rules>",
+      "desc": "At 50% Health, gain a 60% max Health Shield. Every 4 seconds afterwards, gain a 10% max Health Shield.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> After gaining Shield, fire a vial of chemicals at 3 nearby enemies that deals 10% max Health magic damage.<br><rules>Recommended users: Renni and Singed</rules>",
       "effects": {
         "Armor": 45,
-        "Health": 999,
+        "Health": 600,
         "HealthThreshold": 0.5,
         "InitialPercentShield": 0.6000000238418579,
         "MagicResist": 45,
-        "PercentShield": 0.20000000298023224,
-        "PrismaticDamagePercent": 0.15000000596046448,
+        "PercentShield": 0.10000000149011612,
+        "PrismaticDamagePercent": 0.10000000149011612,
         "PrismaticNumChampions": 3,
         "TickRate": 4,
         "{473a431b}": 0.20000000298023224
@@ -536,27 +530,19 @@
         "desc": "At @HealthThreshold*100@% Health, gain a @InitialPercentShield*100@% max Health Shield. Every @TickRate@ seconds afterwards, gain a @PercentShield*100@% max Health Shield.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> After gaining Shield, fire a vial of chemicals at @PrismaticNumChampions@ nearby enemies that deals @PrismaticDamagePercent*100@% max Health magic damage.<br><rules>Recommended users: Renni and Singed</rules>",
         "effects": {
           "Armor": 45,
-          "Health": 999,
+          "Health": 600,
           "HealthThreshold": 0.5,
           "InitialPercentShield": 0.6000000238418579,
           "MagicResist": 45,
-          "PercentShield": 0.20000000298023224,
-          "PrismaticDamagePercent": 0.15000000596046448,
+          "PercentShield": 0.10000000149011612,
+          "PrismaticDamagePercent": 0.10000000149011612,
           "PrismaticNumChampions": 3,
           "TickRate": 4,
           "{473a431b}": 0.20000000298023224
         }
       },
       "_key": "TFT13_Crime_Prismatic_DestabilizedChemtank",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_DestabilizedChemtank.png",
-      "balance": 1,
-      "diff": {
-        "effects": [
-          "Health",
-          "PercentShield%",
-          "PrismaticDamagePercent%"
-        ]
-      }
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_DestabilizedChemtank.png"
     },
     {
       "apiName": "TFT13_Crime_Silver_FleshRipper",
@@ -720,10 +706,10 @@
         "TFT13_Crime"
       ],
       "composition": [],
-      "desc": "Gain 5 Armor and Magic Resist when taking damage, stacking up to 15 times.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> At max stacks, deal 50% %i:scaleArmor%%i:scaleMR% as <TFTRadiantItemBonus>true damage</TFTRadiantItemBonus> to enemies in a <TFTRadiantItemBonus>4-hex radius</TFTRadiantItemBonus> after being attacked. (Cooldown: 2 seconds)<br><rules>Recommended users: Renni and Singed</rules>",
+      "desc": "Gain 10 Armor and Magic Resist when taking damage, stacking up to 15 times.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> At max stacks, deal 50% %i:scaleArmor%%i:scaleMR% as <TFTRadiantItemBonus>true damage</TFTRadiantItemBonus> to enemies in a <TFTRadiantItemBonus>4-hex radius</TFTRadiantItemBonus> after being attacked. (Cooldown: 2 seconds)<br><rules>Recommended users: Renni and Singed</rules>",
       "effects": {
         "Armor": 75,
-        "ArmorPerStack": 5,
+        "ArmorPerStack": 10,
         "Cooldown": 2,
         "Health": 300,
         "HexRange": 4,
@@ -731,7 +717,7 @@
         "MaxStacks": 15,
         "ResistancePercentageDamage": 0.5,
         "{11af8281}": 0.5,
-        "{992e2747}": 5
+        "{992e2747}": 10
       },
       "from": null,
       "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT13_Crime_Prismatic_PiltovenHexplating.TFT_Set13.tex",
@@ -744,7 +730,7 @@
         "desc": "Gain @ArmorPerStack@ Armor and Magic Resist when taking damage, stacking up to @MaxStacks@ times.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> At max stacks, deal @ResistancePercentageDamage*100@% %i:scaleArmor%%i:scaleMR% as <TFTRadiantItemBonus>true damage</TFTRadiantItemBonus> to enemies in a <TFTRadiantItemBonus>@HexRange@-hex radius</TFTRadiantItemBonus> after being attacked. (Cooldown: @Cooldown@ seconds)<br><rules>Recommended users: Renni and Singed</rules>",
         "effects": {
           "Armor": 75,
-          "ArmorPerStack": 5,
+          "ArmorPerStack": 10,
           "Cooldown": 2,
           "Health": 300,
           "HexRange": 4,
@@ -752,18 +738,11 @@
           "MaxStacks": 15,
           "ResistancePercentageDamage": 0.5,
           "{11af8281}": 0.5,
-          "{992e2747}": 5
+          "{992e2747}": 10
         }
       },
       "_key": "TFT13_Crime_Prismatic_PiltovenHexplating",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_PiltovenHexplating.png",
-      "balance": -1,
-      "diff": {
-        "effects": [
-          "ArmorPerStack",
-          "{992e2747}"
-        ]
-      }
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_PiltovenHexplating.png"
     },
     {
       "apiName": "TFT13_Crime_Gold_UnleashedToxins",
@@ -1129,7 +1108,7 @@
       "composition": [],
       "desc": "After dropping below 40% Health, become briefly Untargetable, restore 100% max Health, and gain 60% Attack Damage and 25% Omnivamp.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Upon dying for the first time, revive with 100% max Health!<br><br><br><rules>Recommended users: Smeech and Sevika</rules>",
       "effects": {
-        "AD": 0.6000000238418579,
+        "AD": 0.44999998807907104,
         "CritChance": 60,
         "EnhancedAD": 0.6000000238418579,
         "EnhancedOmnivamp": 0.25,
@@ -1149,7 +1128,7 @@
       "org": {
         "desc": "After dropping below @HealthThreshold*100@% Health, become briefly Untargetable, restore @PercentHeal*100@% max Health, and gain @EnhancedAD*100@% Attack Damage and @EnhancedOmnivamp*100@% Omnivamp.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Upon dying for the first time, revive with @PrismaticReviveHeal*100@% max Health!<br><br>{{TFT13_ChemBaronOnlyItem}}<br><rules>Recommended users: Smeech and Sevika</rules>",
         "effects": {
-          "AD": 0.6000000238418579,
+          "AD": 0.44999998807907104,
           "CritChance": 60,
           "EnhancedAD": 0.6000000238418579,
           "EnhancedOmnivamp": 0.25,
@@ -1161,13 +1140,7 @@
         }
       },
       "_key": "TFT13_Crime_Prismatic_FleshRipper",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_FleshRipper.png",
-      "balance": 1,
-      "diff": {
-        "effects": [
-          "AD%"
-        ]
-      }
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_FleshRipper.png"
     },
     {
       "apiName": "TFT13_Crime_Consumable_LesserShimmerDuplicator",
@@ -1202,15 +1175,15 @@
         "TFT13_Crime"
       ],
       "composition": [],
-      "desc": "After dealing ability damage, enemies affected take an extra 45% damage over 3 seconds as true damage.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Infected enemies deal 20% less damage. When they die, they join your side with <TFTBonus>1200</TFTBonus> Health that decays over 8&nbsp;seconds.<br><rules>Recommended users: Silco and Renata Glasc</rules>",
+      "desc": "After dealing ability damage, enemies affected take an extra 45% damage over 3 seconds as true damage.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Infected enemies deal 25% less damage. When they die, they join your side with <TFTBonus>1600</TFTBonus> Health that decays over 8&nbsp;seconds.<br><rules>Recommended users: Silco and Renata Glasc</rules>",
       "effects": {
-        "AP": 50,
+        "AP": 75,
         "AS": 45,
         "DoTPercentDamage": 0.44999998807907104,
         "Duration": 3,
-        "PrismaticReducedDamage": 0.20000000298023224,
+        "PrismaticReducedDamage": 0.25,
         "PrismaticZombieDecayDuration": 8,
-        "PrismaticZombieHealth": 1200
+        "PrismaticZombieHealth": 1600
       },
       "from": null,
       "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT13_Crime_Prismatic_VirulentVirus.TFT_Set13.tex",
@@ -1222,25 +1195,17 @@
       "org": {
         "desc": "After dealing ability damage, enemies affected take an extra @DoTPercentDamage*100@% damage over @Duration@ seconds as true damage.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Infected enemies deal @PrismaticReducedDamage*100@% less damage. When they die, they join your side with <TFTBonus>@PrismaticZombieHealth@</TFTBonus> Health that decays over @PrismaticZombieDecayDuration@&nbsp;seconds.<br><rules>Recommended users: Silco and Renata Glasc</rules>",
         "effects": {
-          "AP": 50,
+          "AP": 75,
           "AS": 45,
           "DoTPercentDamage": 0.44999998807907104,
           "Duration": 3,
-          "PrismaticReducedDamage": 0.20000000298023224,
+          "PrismaticReducedDamage": 0.25,
           "PrismaticZombieDecayDuration": 8,
-          "PrismaticZombieHealth": 1200
+          "PrismaticZombieHealth": 1600
         }
       },
       "_key": "TFT13_Crime_Prismatic_VirulentVirus",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_VirulentVirus.png",
-      "balance": -1,
-      "diff": {
-        "effects": [
-          "AP",
-          "PrismaticReducedDamage%",
-          "PrismaticZombieHealth"
-        ]
-      }
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_VirulentVirus.png"
     },
     {
       "apiName": "TFT13_Crime_Bronze_ChemGrips",
@@ -1280,15 +1245,15 @@
         "TFT13_Crime"
       ],
       "composition": [],
-      "desc": "Attacks grant 10 bonus Mana. After casting, launch 5 missiles at the current target that deal 250 magic damage.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Casts also launch a wave of toxins that deals 200 magic damage and Stuns enemies hit for 1 seconds.<br><rules>Recommended users: Silco and Renata Glasc</rules>",
+      "desc": "Attacks grant 10 bonus Mana. After casting, launch 5 missiles at the current target that deal 250 magic damage.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Casts also launch a wave of toxins that deals 450 magic damage and Stuns enemies hit for 1.5 seconds.<br><rules>Recommended users: Silco and Renata Glasc</rules>",
       "effects": {
         "AP": 45,
         "ExtraManaOnAttack": 10,
         "FlatDamage": 250,
         "Mana": 30,
         "NumMissiles": 5,
-        "PrismaticWaveDamage": 200,
-        "PrismaticWaveStunDuration": 1
+        "PrismaticWaveDamage": 450,
+        "PrismaticWaveStunDuration": 1.5
       },
       "from": null,
       "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT13_Crime_Prismatic_UnleashedToxins.TFT_Set13.tex",
@@ -1305,19 +1270,12 @@
           "FlatDamage": 250,
           "Mana": 30,
           "NumMissiles": 5,
-          "PrismaticWaveDamage": 200,
-          "PrismaticWaveStunDuration": 1
+          "PrismaticWaveDamage": 450,
+          "PrismaticWaveStunDuration": 1.5
         }
       },
       "_key": "TFT13_Crime_Prismatic_UnleashedToxins",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_UnleashedToxins.png",
-      "balance": -1,
-      "diff": {
-        "effects": [
-          "PrismaticWaveDamage",
-          "PrismaticWaveStunDuration"
-        ]
-      }
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_UnleashedToxins.png"
     },
     {
       "apiName": "TFT13_Crime_Silver_DestabilizedChemtank",
@@ -1325,12 +1283,12 @@
         "TFT13_Crime"
       ],
       "composition": [],
-      "desc": "At 50% Health, gain a 25% max Health Shield. Every 8 seconds afterwards, gain a 10% max Health Shield.<br><rules>Recommended users: Renni and Singed</rules>",
+      "desc": "At 50% Health, gain a 20% max Health Shield. Every 8 seconds afterwards, gain a 10% max Health Shield.<br><rules>Recommended users: Renni and Singed</rules>",
       "effects": {
         "Armor": 15,
         "Health": 200,
         "HealthThreshold": 0.5,
-        "InitialPercentShield": 0.25,
+        "InitialPercentShield": 0.20000000298023224,
         "MagicResist": 15,
         "PercentShield": 0.10000000149011612,
         "TickRate": 8,
@@ -1349,7 +1307,7 @@
           "Armor": 15,
           "Health": 200,
           "HealthThreshold": 0.5,
-          "InitialPercentShield": 0.25,
+          "InitialPercentShield": 0.20000000298023224,
           "MagicResist": 15,
           "PercentShield": 0.10000000149011612,
           "TickRate": 8,
@@ -1357,13 +1315,7 @@
         }
       },
       "_key": "TFT13_Crime_Silver_DestabilizedChemtank",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Silver_DestabilizedChemtank.png",
-      "balance": 1,
-      "diff": {
-        "effects": [
-          "InitialPercentShield%"
-        ]
-      }
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Silver_DestabilizedChemtank.png"
     },
     {
       "apiName": "TFT13_Crime_Consumable_ShimmerDuplicator",
@@ -1470,17 +1422,17 @@
         "TFT13_Crime"
       ],
       "composition": [],
-      "desc": "Increase healing and shielding by <TFTBonus>50%</TFTBonus>. Every 6 seconds, gain <TFTBonus>400</TFTBonus> Shield for 10 seconds and grant the same Shield to the 3 lowest Health allies.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Shielding or healing allies grants them 25 Ability Power and 25% Attack Speed. (Cooldown: 1s)<br><rules>Recommended users: Renni and Renata Glasc</rules>",
+      "desc": "Increase healing and shielding by <TFTBonus>60%</TFTBonus>. Every 6 seconds, gain <TFTBonus>600</TFTBonus> Shield for 10 seconds and grant the same Shield to the 3 lowest Health allies.<br><br><scaleShimmer>Perfected Bonus:</scaleShimmer> Shielding or healing allies grants them 30 Ability Power and 30% Attack Speed. (Cooldown: 1s)<br><rules>Recommended users: Renni and Renata Glasc</rules>",
       "effects": {
         "AP": 60,
         "Cadence": 6,
         "Health": 450,
-        "IncreasedHealShieldPercent": 0.5,
+        "IncreasedHealShieldPercent": 0.6000000238418579,
         "NumAllies": 3,
-        "PrismaticAllyAP": 25,
-        "PrismaticAllyAS": 0.25,
+        "PrismaticAllyAP": 30,
+        "PrismaticAllyAS": 0.30000001192092896,
         "PrismaticCooldownTime": 1,
-        "ShieldAmount": 400,
+        "ShieldAmount": 600,
         "ShieldDuration": 10
       },
       "from": null,
@@ -1496,24 +1448,20 @@
           "AP": 60,
           "Cadence": 6,
           "Health": 450,
-          "IncreasedHealShieldPercent": 0.5,
+          "IncreasedHealShieldPercent": 0.6000000238418579,
           "NumAllies": 3,
-          "PrismaticAllyAP": 25,
-          "PrismaticAllyAS": 0.25,
+          "PrismaticAllyAP": 30,
+          "PrismaticAllyAS": 0.30000001192092896,
           "PrismaticCooldownTime": 1,
-          "ShieldAmount": 400,
+          "ShieldAmount": 600,
           "ShieldDuration": 10
         }
       },
       "_key": "TFT13_Crime_Prismatic_ShimmerBloom",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Crime_Prismatic_ShimmerBloom.png",
-      "balance": -1,
       "diff": {
         "effects": [
-          "IncreasedHealShieldPercent%",
-          "PrismaticAllyAP",
-          "PrismaticAllyAS%",
-          "ShieldAmount"
+          "PrismaticCooldownTime"
         ]
       }
     },
@@ -2388,7 +2336,7 @@
       "apiName": "TFT5_Item_RapidFirecannonRadiant",
       "associatedTraits": [],
       "composition": [],
-      "desc": "Attacks and Abilities <TFTRadiantItemBonus>2%</TFTRadiantItemBonus> <TFTKeyword>Burn</TFTKeyword> and 33% <TFTKeyword>Wound</TFTKeyword> enemies for 5 seconds.<br><br><tftitemrules><tftbold>Burn</tftbold>: Deals a percent of the target's max Health as true damage every second<br><tftbold>Wound</tftbold>: Reduces healing received</tftitemrules><br>",
+      "desc": "Attacks and Abilities <TFTRadiantItemBonus>2%</TFTRadiantItemBonus> <TFTKeyword>Burn</TFTKeyword> and <TFTRadiantItemBonus>33%</TFTRadiantItemBonus> <TFTKeyword>Wound</TFTKeyword> enemies for 5 seconds.<br><br><tftitemrules><tftbold>Burn</tftbold>: Deals a percent of the target's max Health as true damage every second<br><tftbold>Wound</tftbold>: Reduces healing received</tftitemrules><br>",
       "effects": {
         "AS": 60,
         "BonusDamage": 0.10000000149011612,
@@ -2406,7 +2354,7 @@
       "unique": false,
       "category": "radiant",
       "org": {
-        "desc": "Attacks and Abilities <TFTRadiantItemBonus>@BurnPercent@%</TFTRadiantItemBonus> <TFTKeyword>Burn</TFTKeyword> and @HealingReductionPct@% <TFTKeyword>Wound</TFTKeyword> enemies for @Duration@ seconds.<br><br><tftitemrules><tftbold>Burn</tftbold>: Deals a percent of the target's max Health as true damage every second<br><tftbold>Wound</tftbold>: Reduces healing received</tftitemrules><br>",
+        "desc": "Attacks and Abilities <TFTRadiantItemBonus>@BurnPercent@%</TFTRadiantItemBonus> <TFTKeyword>Burn</TFTKeyword> and <TFTRadiantItemBonus>@HealingReductionPct@%</TFTRadiantItemBonus> <TFTKeyword>Wound</TFTKeyword> enemies for @Duration@ seconds.<br><br><tftitemrules><tftbold>Burn</tftbold>: Deals a percent of the target's max Health as true damage every second<br><tftbold>Wound</tftbold>: Reduces healing received</tftitemrules><br>",
         "effects": {
           "AS": 60,
           "BonusDamage": 0.10000000149011612,
@@ -4233,7 +4181,14 @@
         }
       },
       "_key": "TFT13_JunkerKing_SelfDestructButton",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_JunkerKing_SelfDestructButton.png"
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_JunkerKing_SelfDestructButton.png",
+      "balance": -1,
+      "diff": {
+        "effects": [
+          "SelfDestruct_ResistDamage_Level1%",
+          "SelfDestruct_ResistDamage_Level2%"
+        ]
+      }
     },
     {
       "apiName": "TFT13_JunkerKing_3Star",
@@ -4287,7 +4242,14 @@
         }
       },
       "_key": "TFT13_JunkerKing_Flamethrower",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_JunkerKing_Flamethrower.png"
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_JunkerKing_Flamethrower.png",
+      "balance": -1,
+      "diff": {
+        "effects": [
+          "Flamethrower_Damage_Level1",
+          "Flamethrower_Damage_Level2"
+        ]
+      }
     },
     {
       "apiName": "TFT13_JunkerKing_Pass",
@@ -4602,7 +4564,7 @@
       "apiName": "TFT9_Item_OrnnTrickstersGlass",
       "associatedTraits": [],
       "composition": [],
-      "desc": "Summon a clone with 70% base Health and +10% max Mana. You cannot equip items to the clone.<br><br><tftitemrules>The clone benefits from active traits</tftitemrules><br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br>",
+      "desc": "Summon a clone with 70% max Health and +10% max Mana. You cannot equip items to the clone.<br><br><tftitemrules>The clone benefits from active traits</tftitemrules><br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br>",
       "effects": {
         "AS": 10,
         "Armor": 10,
@@ -4619,7 +4581,7 @@
       "unique": true,
       "category": "artifact",
       "org": {
-        "desc": "Summon a clone with @HealthPercent@% base Health and +@ManaIncrease*100@% max Mana. You cannot equip items to the clone.<br><br><tftitemrules>The clone benefits from active traits</tftitemrules><br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br>",
+        "desc": "Summon a clone with @HealthPercent@% max Health and +@ManaIncrease*100@% max Mana. You cannot equip items to the clone.<br><br><tftitemrules>The clone benefits from active traits</tftitemrules><br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br>",
         "effects": {
           "AS": 10,
           "Armor": 10,
@@ -5251,7 +5213,13 @@
         }
       },
       "_key": "TFT13_Item_ExperimentEmblemItem",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Item_ExperimentEmblemItem.png"
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Item_ExperimentEmblemItem.png",
+      "balance": 1,
+      "diff": {
+        "effects": [
+          "PercentMaxHealth"
+        ]
+      }
     },
     {
       "apiName": "TFT13_Item_BruiserEmblemItem",
@@ -5992,7 +5960,13 @@
         }
       },
       "_key": "TFT_Item_BrambleVest",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_BrambleVest.png"
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_BrambleVest.png",
+      "balance": 1,
+      "diff": {
+        "effects": [
+          "PercentMaxHP%"
+        ]
+      }
     },
     {
       "apiName": "TFT_Item_ChainVest",
@@ -6271,23 +6245,6 @@
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_RadiantVirtue.png"
     },
     {
-      "apiName": "TFT13_Item_SquadStolenItem",
-      "associatedTraits": [],
-      "composition": [],
-      "desc": "This dangerous item has been confiscated by the Enforcers. You can have it back after serving your time.",
-      "from": null,
-      "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT13_Item_SquadStolenItem.TFT_Set13.tex",
-      "id": null,
-      "incompatibleTraits": [],
-      "name": "Confiscated!",
-      "unique": false,
-      "org": {
-        "desc": "This dangerous item has been confiscated by the Enforcers. You can have it back after serving your time."
-      },
-      "_key": "TFT13_Item_SquadStolenItem",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Item_SquadStolenItem.png"
-    },
-    {
       "apiName": "TFT_Item_UnstableConcoction",
       "associatedTraits": [],
       "composition": [
@@ -6324,7 +6281,13 @@
         }
       },
       "_key": "TFT_Item_UnstableConcoction",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_UnstableConcoction.png"
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_UnstableConcoction.png",
+      "balance": -1,
+      "diff": {
+        "effects": [
+          "StatOmnivamp_NotStatBar%"
+        ]
+      }
     },
     {
       "apiName": "TFT_Item_GuardianAngel",
@@ -6557,7 +6520,14 @@
         }
       },
       "_key": "TFT_Item_Artifact_LudensTempest",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_Artifact_LudensTempest.png"
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_Artifact_LudensTempest.png",
+      "balance": 1,
+      "diff": {
+        "effects": [
+          "AD",
+          "AP"
+        ]
+      }
     },
     {
       "apiName": "TFT_Item_Artifact_SpectralCutlass",
@@ -6871,6 +6841,23 @@
       "specialEffects": [
         "Taunt"
       ]
+    },
+    {
+      "apiName": "TFT13_Item_SquadStolenItem",
+      "associatedTraits": [],
+      "composition": [],
+      "desc": "This dangerous item has been confiscated by the Enforcers. You can have it back after serving your time.",
+      "from": null,
+      "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT13_Item_SquadStolenItem.TFT_Set13.tex",
+      "id": null,
+      "incompatibleTraits": [],
+      "name": "Confiscated!",
+      "unique": false,
+      "org": {
+        "desc": "This dangerous item has been confiscated by the Enforcers. You can have it back after serving your time."
+      },
+      "_key": "TFT13_Item_SquadStolenItem",
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT13_Item_SquadStolenItem.png"
     },
     {
       "apiName": "TFT_Item_EternalFlame",
@@ -7295,7 +7282,14 @@
         }
       },
       "_key": "TFT_Item_Artifact_SuspiciousTrenchCoat",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_Artifact_SuspiciousTrenchCoat.png"
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_Artifact_SuspiciousTrenchCoat.png",
+      "balance": -1,
+      "diff": {
+        "effects": [
+          "AS",
+          "PercentHealthOfCopies"
+        ]
+      }
     },
     {
       "apiName": "TFT_Item_Morellonomicon",
@@ -8270,7 +8264,14 @@
         }
       },
       "_key": "TFT_Item_Artifact_SilvermereDawn",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_Artifact_SilvermereDawn.png"
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-item/TFT_Item_Artifact_SilvermereDawn.png",
+      "balance": -1,
+      "diff": {
+        "effects": [
+          "Armor",
+          "MagicResist"
+        ]
+      }
     },
     {
       "apiName": "TFT_Item_TacticiansScepter",

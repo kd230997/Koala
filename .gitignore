@@ -1,3 +1,5 @@
 *.pyc
 
 docker/minIO/data/*
+tft-mode/tool/images/*
+tft-mode/web/storage/*

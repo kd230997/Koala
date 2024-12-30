@@ -2,7 +2,7 @@
   "set": "13",
   "lang": "en_US",
   "type": "cdragon-champion",
-  "version": "14.24b",
+  "version": "14.24",
   "data": [
     {
       "ability": {
@@ -29,7 +29,6 @@
       "cost": 1,
       "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT_BlueGolem.tex",
       "name": "Golem",
-      "role": null,
       "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT_BlueGolem_Mobile.tex",
       "stats": {
         "armor": 40,
@@ -81,7 +80,6 @@
       "cost": 0,
       "icon": "ASSETS/UX/TFT/ChampionSplashes/TFTDebug_Dummy.tex",
       "name": "Target Dummy",
-      "role": null,
       "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFTDebug_Dummy_Mobile.tex",
       "stats": {
         "armor": 30,
@@ -120,7 +118,6 @@
       "cost": 1,
       "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT_Voidspawn.tex",
       "name": "Voidspawn",
-      "role": null,
       "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT_Voidspawn_Mobile.tex",
       "stats": {
         "armor": 30,
@@ -159,7 +156,6 @@
       "cost": 1,
       "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT_ElderDragon.tex",
       "name": "Elder Dragon",
-      "role": null,
       "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT_ElderDragon_Mobile.tex",
       "stats": {
         "armor": 50,
@@ -188,7 +184,7 @@
     },
     {
       "ability": {
-        "desc": "Gain <TFTBonus>[ 50 / 50 / 55 ]%&nbsp;(%i:scaleAP%)</TFTBonus>&nbsp;Durability and grant the ally who has dealt the most damage this round <scaleLevel>[ 100 / 120 / 160 ]%</scaleLevel> Attack Speed, decaying over 4&nbsp;seconds. ",
+        "desc": "Gain <TFTBonus>[ 50 / 50 / 60 ]%&nbsp;(%i:scaleAP%)</TFTBonus>&nbsp;Durability and grant the ally who has dealt the most damage this round <scaleLevel>[ 100 / 120 / 160 ]%</scaleLevel> Attack Speed, decaying over 4&nbsp;seconds. ",
         "icon": "ASSETS/Characters/TFT13_Singed/HUD/Icons2D/Singed_R.TFT_Set13.tex",
         "name": "Dangerous Mutations",
         "variables": [
@@ -222,8 +218,8 @@
               0.5,
               0.5,
               0.5,
-              0.550000011920929,
               0.6000000238418579,
+              0.699999988079071,
               0.5,
               0.5
             ]
@@ -295,7 +291,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Singed/Skins/Base/Images/TFT13_Singed.TFT_Set13.tex",
       "name": "Singed",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Singed/Skins/Base/Images/TFT13_Singed_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
@@ -354,8 +349,8 @@
                 0.5,
                 0.5,
                 0.5,
-                0.550000011920929,
                 0.6000000238418579,
+                0.699999988079071,
                 0.5,
                 0.5
               ]
@@ -430,7 +425,7 @@
       "balance": -1,
       "diff": {
         "ability.variables": [
-          "DR"
+          "HEROSpellBaseDamage"
         ]
       }
     },
@@ -507,7 +502,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_RenataGlasc/Skins/Base/Images/TFT13_RenataGlasc.TFT_Set13.tex",
       "name": "Renata Glasc",
-      "role": "APCasterHighMana",
       "squareIcon": "ASSETS/Characters/TFT13_RenataGlasc/Skins/Base/Images/TFT13_RenataGlasc_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 20,
@@ -602,11 +596,18 @@
       "_key": "TFT13_RenataGlasc",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/RenataGlasc.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_RenataGlasc.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_renataglasc.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_renataglasc.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "TargetDamage",
+          "ExplosionDamage"
+        ]
+      }
     },
     {
       "ability": {
-        "desc": "Throw a canister at target, dealing <magicDamage>[ 100 / 200 / 1000 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage to them and releasing <scaleLevel>[ 4 / 4 / 8 ]</scaleLevel> monstrosities. Monstrosities attack 5 times and deal <magicDamage>[ 36 / 55 / 100 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage per&nbsp;attack.",
+        "desc": "Throw a canister at target, dealing <magicDamage>[ 100 / 200 / 1000 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage to them and releasing <scaleLevel>[ 4 / 4 / 8 ]</scaleLevel> monstrosities. Monstrosities attack 5 times and deal <magicDamage>[ 38 / 57 / 100 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage per&nbsp;attack.",
         "icon": "ASSETS/Characters/TFT13_Silco/HUD/Icons2D/TFT6_Silco_EyeOfTheStorm.TFT_Set13.tex",
         "name": "Canned Monstrosity",
         "variables": [
@@ -650,8 +651,8 @@
             "name": "MinionDamage",
             "value": [
               30,
-              36,
-              55,
+              38,
+              57,
               100,
               120,
               6,
@@ -689,7 +690,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Silco/Skins/Base/Images/TFT13_Silco.TFT_Set13.tex",
       "name": "Silco",
-      "role": "APCasterHighMana",
       "squareIcon": "ASSETS/Characters/TFT13_Silco/Skins/Base/Images/TFT13_Silco_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 30,
@@ -758,8 +758,8 @@
               "name": "MinionDamage",
               "value": [
                 30,
-                36,
-                55,
+                38,
+                57,
                 100,
                 120,
                 6,
@@ -797,7 +797,7 @@
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Silco.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Silco.png",
       "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_silco.tft_set13.png",
-      "balance": -1,
+      "balance": 1,
       "diff": {
         "ability.variables": [
           "MinionDamage"
@@ -806,7 +806,7 @@
     },
     {
       "ability": {
-        "desc": "Kick the target, dealing <trueDamage>[ 150 / 224 / 374 ]&nbsp;(%i:scaleAD%%i:scaleAP%)</trueDamage> <TFTKeyword>Adaptive Damage</TFTKeyword>. Heal for 33% of the damage&nbsp;dealt.<br><br><rules><tftbold>Adaptive Damage:</tftbold> Uses the damage type the target resists less</rules><br>",
+        "desc": "Kick the target, dealing <trueDamage>[ 145 / 218 / 363 ]&nbsp;(%i:scaleAD%%i:scaleAP%)</trueDamage> <TFTKeyword>Adaptive Damage</TFTKeyword>. Heal for 33% of the damage&nbsp;dealt.<br><br><rules><tftbold>Adaptive Damage:</tftbold> Uses the damage type the target resists less</rules><br>",
         "icon": "ASSETS/Characters/TFT13_Camille/HUD/Icons2D/Camille_Spell.TFT_Set13.tex",
         "name": "Adaptive Strike",
         "variables": [
@@ -853,14 +853,13 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Camille/Skins/Base/Images/TFT13_Camille.TFT_Set13.tex",
       "name": "Camille",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Camille/Skins/Base/Images/TFT13_Camille_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 45,
         "attackSpeed": 0.75,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 52,
+        "damage": 50,
         "hp": 700,
         "initialMana": 0,
         "magicResist": 45,
@@ -928,10 +927,12 @@
       "specialEffects": [
         "Adaptive Damage"
       ],
-      "balance": 1,
+      "balance": -1,
       "diff": {
-        "stats": [
-          "damage"
+        "ability.variables": [
+          "PercentAttackDamage",
+          "APDamage",
+          "HealPercent%"
         ]
       }
     },
@@ -1032,7 +1033,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Blitzcrank/Skins/Base/Images/TFT13_Blitzcrank.TFT_Set13.tex",
       "name": "Blitzcrank",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Blitzcrank/Skins/Base/Images/TFT13_Blitzcrank_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -1151,7 +1151,13 @@
       "_key": "TFT13_Blitzcrank",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Blitzcrank.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Blitzcrank.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_blitzcrank.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_blitzcrank.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "Shield"
+        ]
+      }
     },
     {
       "ability": {
@@ -1226,7 +1232,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Vi/Skins/Base/Images/TFT13_Vi.TFT_Set13.tex",
       "name": "Vi",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Vi/Skins/Base/Images/TFT13_Vi_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -1321,7 +1326,15 @@
       "_key": "TFT13_Vi",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Vi.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Vi.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_vi.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_vi.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "Shield",
+          "PercentAttackDamage",
+          "PercentAttackDamage_SecondaryDamage"
+        ]
+      }
     },
     {
       "ability": {
@@ -1432,7 +1445,6 @@
       "cost": 5,
       "icon": "ASSETS/Characters/TFT13_Caitlyn/Skins/Base/Images/TFT13_Caitlyn.TFT_Set13.tex",
       "name": "Caitlyn",
-      "role": "ADCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Caitlyn/Skins/Base/Images/TFT13_Caitlyn_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
@@ -1563,11 +1575,20 @@
       "_key": "TFT13_Caitlyn",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Caitlyn.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Caitlyn.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_caitlyn.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_caitlyn.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "PercentAttackDamage"
+        ],
+        "stats": [
+          "damage"
+        ]
+      }
     },
     {
       "ability": {
-        "desc": "Summon an assault of afterimages that deals <magicDamage>[ 300 / 450 / 1200 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage to the target and <magicDamage>[ 150 / 225 / 450 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage to <scaleLevel>[ 2 / 2 / 4 ]</scaleLevel> other nearby&nbsp;enemies. Afterimages reduce their target's Magic Resist by 5 for the rest of combat.",
+        "desc": "Summon an assault of afterimages that deals <magicDamage>[ 290 / 435 / 1200 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage to the target and <magicDamage>[ 145 / 215 / 450 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage to <scaleLevel>[ 2 / 2 / 4 ]</scaleLevel> other nearby&nbsp;enemies. Afterimages reduce their target's Magic Resist by 5 for the rest of combat.",
         "icon": "ASSETS/Characters/TFT13_Ekko/HUD/Icons2D/EkkoSpell.TFT_Set13.tex",
         "name": "Splitting Seconds",
         "variables": [
@@ -1599,8 +1620,8 @@
             "name": "ModifiedDamage",
             "value": [
               0,
-              300,
-              450,
+              290,
+              435,
               1200,
               2000,
               0,
@@ -1611,8 +1632,8 @@
             "name": "SecondaryDamage",
             "value": [
               0,
-              150,
-              225,
+              145,
+              215,
               450,
               600,
               0,
@@ -1650,7 +1671,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Ekko/Skins/Base/Images/TFT13_Ekko.TFT_Set13.tex",
       "name": "Ekko",
-      "role": "APReaper",
       "squareIcon": "ASSETS/Characters/TFT13_Ekko/Skins/Base/Images/TFT13_Ekko_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 60,
@@ -1711,8 +1731,8 @@
               "name": "TargetDamage",
               "value": [
                 0,
-                300,
-                450,
+                290,
+                435,
                 1200,
                 2000,
                 0,
@@ -1723,8 +1743,8 @@
               "name": "SecondaryDamage",
               "value": [
                 0,
-                150,
-                225,
+                145,
+                215,
                 450,
                 600,
                 0,
@@ -1831,7 +1851,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Amumu/Skins/Base/Images/TFT13_Amumu.TFT_Set13.tex",
       "name": "Amumu",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Amumu/Skins/Base/Images/TFT13_Amumu_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 35,
@@ -1918,7 +1937,7 @@
     },
     {
       "ability": {
-        "desc": "Summon a gate in a 5-hex line across target. Enemies hit take <magicDamage>[ 80 / 120 / 1000 ] (%i:scaleAP%)</magicDamage> magic damage and are 20% <TFTKeyword>Shredded</TFTKeyword> for 4 seconds. Malzahar spreads 5 stacks of infection between enemies hit.<br><br>Infection deals <magicDamage>[ 15 / 22 / 400 ] (%i:scaleAP%)</magicDamage> magic damage per second for the rest of combat. This effect can stack infinitely. When an infected target dies, they spread their stacks to nearby enemies.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist</rules>",
+        "desc": "Summon a gate in a 5-hex line across target. Enemies hit take <magicDamage>[ 80 / 120 / 1000 ] (%i:scaleAP%)</magicDamage> magic damage and are 20% <TFTKeyword>Shredded</TFTKeyword> for 4 seconds. Malzahar spreads 5 stacks of infection between enemies hit.<br><br>Infection deals <magicDamage>[ 14 / 21 / 400 ] (%i:scaleAP%)</magicDamage> magic damage per second for the rest of combat. This effect can stack infinitely. When an infected target dies, they spread their stacks to nearby enemies.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist</rules>",
         "icon": "ASSETS/Characters/TFT13_Malzahar/HUD/Icons2D/TFT13_MalzaharSpellIcon.TFT_Set13.tex",
         "name": "Call of the Machine",
         "variables": [
@@ -1938,8 +1957,8 @@
             "name": "InfectionDamage",
             "value": [
               0,
-              15,
-              22,
+              14,
+              21,
               400,
               1000,
               2.5,
@@ -1977,7 +1996,6 @@
       "cost": 5,
       "icon": "ASSETS/Characters/TFT13_Malzahar/Skins/Base/Images/TFT13_Malzahar.TFT_Set13.tex",
       "name": "Malzahar",
-      "role": "APCasterHighMana",
       "squareIcon": "ASSETS/Characters/TFT13_Malzahar/Skins/Base/Images/TFT13_Malzahar_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
@@ -2022,8 +2040,8 @@
               "name": "InfectionDamage",
               "value": [
                 0,
-                15,
-                22,
+                14,
+                21,
                 400,
                 1000,
                 2.5,
@@ -2064,10 +2082,14 @@
       "specialEffects": [
         "Shred"
       ],
-      "balance": 1,
+      "balance": -1,
       "diff": {
         "ability.variables": [
           "InfectionDamage"
+        ],
+        "stats": [
+          "initialMana",
+          "mana"
         ]
       }
     },
@@ -2180,7 +2202,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_DrMundo/Skins/Base/Images/TFT13_DrMundo.TFT_Set13.tex",
       "name": "Dr. Mundo",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_DrMundo/Skins/Base/Images/TFT13_DrMundo_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 60,
@@ -2311,7 +2332,18 @@
       "_key": "TFT13_DrMundo",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/DrMundo.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_DrMundo.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_drmundo.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_drmundo.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "ability.variables": [
+          "PercentHealthHeal",
+          "APHeal",
+          "ModifiedDamage",
+          "PercentHealthDamage",
+          "ExperimentHealthGain",
+          "BaseExperimentHealthGain"
+        ]
+      }
     },
     {
       "ability": {
@@ -2410,7 +2442,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Twitch/Skins/Base/Images/TFT13_Twitch.TFT_Set13.tex",
       "name": "Twitch",
-      "role": "ADCarry",
       "squareIcon": "ASSETS/Characters/TFT13_Twitch/Skins/Base/Images/TFT13_Twitch__Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 30,
@@ -2616,7 +2647,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Akali/Skins/Base/Images/TFT13_Akali.TFT_Set13.tex",
       "name": "Akali",
-      "role": "APReaper",
       "squareIcon": "ASSETS/Characters/TFT13_Akali/Skins/Base/Images/TFT13_Akali_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 45,
@@ -2723,7 +2753,13 @@
       "_key": "TFT13_Akali",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Akali.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Akali.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_akali.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_akali.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "ability.variables": [
+          "SecondaryDamage"
+        ]
+      }
     },
     {
       "ability": {
@@ -2774,7 +2810,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Sett/Skins/Base/Images/TFT13_Sett.TFT_Set13.tex",
       "name": "Sett",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Sett/Skins/Base/Images/TFT13_Sett_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -2896,7 +2931,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Ezreal/Skins/Base/Images/TFT13_Ezreal.TFT_Set13.tex",
       "name": "Ezreal",
-      "role": "ADCasterMana",
       "squareIcon": "ASSETS/Characters/TFT13_Ezreal/Skins/Base/Images/TFT13_Ezreal_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 25,
@@ -3058,7 +3092,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Illaoi/Skins/Base/Images/TFT13_Illaoi.TFT_Set13.tex",
       "name": "Illaoi",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Illaoi/Skins/Base/Images/TFT13_Illaoi_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 60,
@@ -3204,7 +3237,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Draven/Skins/Base/Images/TFT13_Draven.TFT_Set13.tex",
       "name": "Draven",
-      "role": "ADCarry",
       "squareIcon": "ASSETS/Characters/TFT13_Draven/Skins/Base/Images/TFT13_Draven_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 15,
@@ -3263,7 +3295,13 @@
       "_key": "TFT13_Draven",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Draven.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Draven.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_draven.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_draven.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "ability.variables": [
+          "PercentAD"
+        ]
+      }
     },
     {
       "ability": {
@@ -3338,7 +3376,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Rell/Skins/Base/Images/TFT13_Rell.TFT_Set13.tex",
       "name": "Rell",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Rell/Skins/Base/Images/TFT13_Rell_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 45,
@@ -3512,7 +3549,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Cassiopeia/Skins/Base/Images/TFT13_Cassiopeia.TFT_Set13.tex",
       "name": "Cassiopeia",
-      "role": "APCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Cassiopeia/Skins/Base/Images/TFT13_Cassiopeia_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 25,
@@ -3718,7 +3754,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Vladimir/Skins/Base/Images/TFT12_Vladimir.TFT_Set13.tex",
       "name": "Vladimir",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Vladimir/Skins/Base/Images/TFT13_Vladimir_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 45,
@@ -3853,7 +3888,18 @@
       "_key": "TFT13_Vladimir",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Vladimir.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Vladimir.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft12_vladimir.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft12_vladimir.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "HEROBonusDamage",
+          "TOOLTIPONLYMana",
+          "HEROAmpPerCast"
+        ],
+        "stats": [
+          "mana"
+        ]
+      }
     },
     {
       "ability": {
@@ -3928,7 +3974,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Elise/Skins/Base/Images/TFT13_Elise.TFT_Set13.tex",
       "name": "Elise",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Elise/Skins/Base/Images/TFT13_Elise_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 0,
@@ -4027,7 +4072,13 @@
       "_key": "TFT13_Elise",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Elise.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Elise.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_elise.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_elise.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "ModifiedHeal"
+        ]
+      }
     },
     {
       "ability": {
@@ -4126,7 +4177,6 @@
       "cost": 5,
       "icon": "ASSETS/Characters/TFT13_LeBlanc/Skins/Base/Images/TFT13_LeBlanc.TFT_Set13.tex",
       "name": "LeBlanc",
-      "role": "APCasterHighMana",
       "squareIcon": "ASSETS/Characters/TFT13_LeBlanc/Skins/Base/Images/TFT13_LeBlanc_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
@@ -4332,7 +4382,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Heimerdinger/Skins/Base/Images/TFT13_Heimerdinger.TFT_Set13.tex",
       "name": "Heimerdinger",
-      "role": "APCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Heimerdinger/Skins/Base/Images/TFT13_Heimerdinger_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 30,
@@ -4439,7 +4488,13 @@
       "_key": "TFT13_Heimerdinger",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Heimerdinger.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Heimerdinger.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_heimerdinger.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_heimerdinger.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "ability.variables": [
+          "Damage"
+        ]
+      }
     },
     {
       "ability": {
@@ -4586,7 +4641,6 @@
       "cost": 5,
       "icon": "ASSETS/Characters/TFT13_Jayce/Skins/Base/Images/TFT13_Jayce.TFT_Set13.tex",
       "name": "Jayce",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Jayce/Skins/Base/Images/TFT13_Jayce_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 0,
@@ -4753,7 +4807,14 @@
       "_key": "TFT13_Jayce",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Jayce.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Jayce.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_jayce.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_jayce.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "PercentAttackDamage",
+          "FlyingEnemyDamageRadius"
+        ]
+      }
     },
     {
       "ability": {
@@ -4804,7 +4865,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Trundle/Skins/Base/Images/TFT13_Trundle.TFT_Set13.tex",
       "name": "Trundle",
-      "role": "ADTank",
       "squareIcon": "ASSETS/Characters/TFT13_Trundle/Skins/Base/Images/TFT13_Trundle_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
@@ -4875,7 +4935,13 @@
       "_key": "TFT13_Trundle",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Trundle.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Trundle.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_trundle.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_trundle.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "ModifiedHeal"
+        ]
+      }
     },
     {
       "ability": {
@@ -4926,7 +4992,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Ziggs/Skins/Base/Images/TFT13_Ziggs.TFT_Set13.tex",
       "name": "Ziggs",
-      "role": "APCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Ziggs/Skins/Base/Images/TFT13_Ziggs_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 20,
@@ -4997,7 +5062,14 @@
       "_key": "TFT13_Ziggs",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Ziggs.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Ziggs.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_ziggs.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_ziggs.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "ModifiedInitialDamage",
+          "ModifiedSecondaryDamage"
+        ]
+      }
     },
     {
       "ability": {
@@ -5324,7 +5396,6 @@
       "cost": 5,
       "icon": "ASSETS/Characters/TFT13_Rumble/Skins/Base/Images/TFT13_Rumble.TFT_Set13.tex",
       "name": "Rumble",
-      "role": "APFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Rumble/Skins/Base/Images/TFT13_Rumble_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 70,
@@ -5675,7 +5746,16 @@
       "_key": "TFT13_Rumble",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Rumble.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Rumble.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_rumble.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_rumble.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "ability.variables": [
+          "SelfDestruct_ResistDamage_Level1",
+          "SelfDestruct_ResistDamage_Level2",
+          "Flamethrower_Damage_Level1",
+          "Flamethrower_Damage_Level2"
+        ]
+      }
     },
     {
       "ability": {
@@ -5750,7 +5830,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Gremlin/Skins/Base/Images/TFT13_Gremlin.TFT_Set13.tex",
       "name": "Smeech",
-      "role": "ADReaper",
       "squareIcon": "ASSETS/Characters/TFT13_Gremlin/Skins/Base/Images/TFT13_Gremlin_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -5845,7 +5924,13 @@
       "_key": "TFT13_Gremlin",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Gremlin.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Gremlin.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_gremlin.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_gremlin.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "stats": [
+          "damage"
+        ]
+      }
     },
     {
       "ability": {
@@ -6160,7 +6245,6 @@
       "cost": 5,
       "icon": "ASSETS/Characters/TFT13_Lieutenant/Skins/Base/Images/TFT13_Lieutenant.TFT_Set13.tex",
       "name": "Sevika",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Lieutenant/Skins/Base/Images/TFT13_Lieutenant_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 60,
@@ -6499,7 +6583,13 @@
       "_key": "TFT13_Lieutenant",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Lieutenant.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Lieutenant.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_lieutenant.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_lieutenant.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "ability.variables": [
+          "Spell1_ADPercent"
+        ]
+      }
     },
     {
       "ability": {
@@ -6646,7 +6736,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Chainsaw/Skins/Base/Images/TFT13_Chainsaw.TFT_Set13.tex",
       "name": "Renni",
-      "role": "ADTank",
       "squareIcon": "ASSETS/Characters/TFT13_Chainsaw/Skins/Base/Images/TFT13_Chainsaw_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -6876,7 +6965,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Beardy/Skins/Base/Images/TFT13_Beardy.TFT_Set13.tex",
       "name": "Loris",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Beardy/Skins/Base/Images/TFT13_Beardy_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -6885,9 +6973,9 @@
         "critMultiplier": 1.399999976158142,
         "damage": 50,
         "hp": 850,
-        "initialMana": 40,
+        "initialMana": 50,
         "magicResist": 50,
-        "mana": 80,
+        "mana": 90,
         "range": 1
       },
       "tileIcon": "ASSETS/Characters/TFT13_Beardy/HUD/TFT13_Beardy_Square.TFT_Set13.tex",
@@ -6960,10 +7048,12 @@
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Beardy.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Beardy.png",
       "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_beardy.tft_set13.png",
-      "balance": 0,
+      "balance": 1,
       "diff": {
+        "ability.variables": [
+          "Shield"
+        ],
         "stats": [
-          "initialMana",
           "mana"
         ]
       }
@@ -7065,7 +7155,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Fish/Skins/Base/Images/TFT13_Fish.TFT_Set13.tex",
       "name": "Steb",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Fish/Skins/Base/Images/TFT13_Fish_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 45,
@@ -7259,7 +7348,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Shooter/Skins/Base/Images/TFT13_Shooter.TFT_Set13.tex",
       "name": "Maddie",
-      "role": "ADCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Shooter/Skins/Base/Images/TFT13_Shooter_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 15,
@@ -7453,7 +7541,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Blue/Skins/Base/Images/TFT13_Blue.TFT_Set13.tex",
       "name": "Powder",
-      "role": "APCasterHighMana",
       "squareIcon": "ASSETS/Characters/TFT13_Blue/Skins/Base/Images/TFT13_Blue_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 15,
@@ -7576,7 +7663,16 @@
       "_key": "TFT13_Blue",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Blue.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Blue.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_blue.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_blue.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "ability.variables": [
+          "Damage",
+          "HERODamage",
+          "HEROFalloffPercent",
+          "HeroBigFalloffPerc"
+        ]
+      }
     },
     {
       "ability": {
@@ -7699,7 +7795,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Prime/Skins/Base/Images/TFT13_Prime.TFT_Set13.tex",
       "name": "Vander",
-      "role": "ADTank",
       "squareIcon": "ASSETS/Characters/TFT13_Prime/Skins/Base/Images/TFT13_Prime_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 45,
@@ -7842,7 +7937,13 @@
       "_key": "TFT13_Prime",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Prime.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Prime.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_prime.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_prime.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "HEROBonusDamage"
+        ]
+      }
     },
     {
       "ability": {
@@ -7905,7 +8006,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_FlyGuy/Skins/Base/Images/TFT13_Flyguy.TFT_Set13.tex",
       "name": "Scar",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_FlyGuy/Skins/Base/Images/TFT13_Flyguy_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -7988,7 +8088,19 @@
       "_key": "TFT13_FlyGuy",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/FlyGuy.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_FlyGuy.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_flyguy.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_flyguy.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "ability.variables": [
+          "Heal",
+          "Damage"
+        ],
+        "stats": [
+          "hp",
+          "initialMana",
+          "mana"
+        ]
+      }
     },
     {
       "ability": {
@@ -8099,7 +8211,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_NunuWillump/Skins/Base/Images/TFT13_NunuWillump.TFT_Set13.tex",
       "name": "Nunu & Willump",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_NunuWillump/Skins/Base/Images/TFT13_NunuWillump_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -8234,7 +8345,13 @@
       "_key": "TFT13_NunuWillump",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/NunuWillump.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_NunuWillump.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_nunuwillump.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_nunuwillump.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "Durability"
+        ]
+      }
     },
     {
       "ability": {
@@ -8369,7 +8486,6 @@
       "cost": 5,
       "icon": "ASSETS/Characters/TFT13_Jinx/Skins/Base/Images/TFT13_Jinx.TFT_Set13.tex",
       "name": "Jinx",
-      "role": "ADCasterMana",
       "squareIcon": "ASSETS/Characters/TFT13_Jinx/Skins/Base/Images/TFT13_Jinx_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
@@ -8524,11 +8640,18 @@
       "_key": "TFT13_Jinx",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Jinx.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Jinx.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_jinx.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_jinx.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "FlameChompersPercentAD",
+          "ZapPercentAD"
+        ]
+      }
     },
     {
       "ability": {
-        "desc": "<spellPassive>Passive:</spellPassive> Every 3rd attack is replaced with a spark that deals <physicalDamage>[ 106 / 159 / 236 ]&nbsp;(%i:scaleAD%)</physicalDamage> physical damage to target and <physicalDamage>[ 53 / 80 / 118 ]&nbsp;(%i:scaleAD%)</physicalDamage> physical damage to 2 nearby enemies.",
+        "desc": "<spellPassive>Passive:</spellPassive> Every 3rd attack is replaced with a spark that deals <physicalDamage>[ 100 / 150 / 223 ]&nbsp;(%i:scaleAD%)</physicalDamage> physical damage to target and <physicalDamage>[ 50 / 75 / 111 ]&nbsp;(%i:scaleAD%)</physicalDamage> physical damage to 2 nearby enemies.",
         "icon": "ASSETS/Characters/TFT13_Zeri/HUD/Icons2D/Zeri_P.TFT_Set13.tex",
         "name": "Living Battery",
         "variables": [
@@ -8599,14 +8722,13 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Zeri/Skins/Base/Images/TFT13_Zeri.TFT_Set13.tex",
       "name": "Zeri",
-      "role": "ADCarry",
       "squareIcon": "ASSETS/Characters/TFT13_Zeri/Skins/Base/Images/TFT13_Zeri_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 20,
         "attackSpeed": 0.75,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 48,
+        "damage": 45,
         "hp": 600,
         "initialMana": 0,
         "magicResist": 20,
@@ -8697,14 +8819,14 @@
       "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_zeri.tft_set13.png",
       "balance": 1,
       "diff": {
-        "stats": [
-          "damage"
+        "ability.variables": [
+          "PercentAttackDamage"
         ]
       }
     },
     {
       "ability": {
-        "desc": "Jab target 2 times for <physicalDamage>[ 62 / 93 / 140 ]&nbsp;(%i:scaleAD%)</physicalDamage> physical damage each. Then uppercut them, dealing <physicalDamage>[ 172 / 258 / 387 ]&nbsp;(%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage and briefly knocking them&nbsp;up.",
+        "desc": "Jab target 2 times for <physicalDamage>[ 68 / 101 / 152 ]&nbsp;(%i:scaleAD%)</physicalDamage> physical damage each. Then uppercut them, dealing <physicalDamage>[ 185 / 278 / 416 ]&nbsp;(%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage and briefly knocking them&nbsp;up.",
         "icon": "ASSETS/Characters/TFT13_Red/HUD/TFT13_Red_Ability.TFT_Set13.tex",
         "name": "1-2-3 Combo",
         "variables": [
@@ -8775,14 +8897,13 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Red/Skins/Base/Images/TFT13_Red.TFT_Set13.tex",
       "name": "Violet",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Red/Skins/Base/Images/TFT13_Red_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
         "attackSpeed": 0.800000011920929,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 46,
+        "damage": 50,
         "hp": 650,
         "initialMana": 20,
         "magicResist": 40,
@@ -8870,13 +8991,7 @@
       "_key": "TFT13_Red",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Red.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Red.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_red.tft_set13.png",
-      "balance": -1,
-      "diff": {
-        "stats": [
-          "damage"
-        ]
-      }
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_red.tft_set13.png"
     },
     {
       "ability": {
@@ -8939,7 +9054,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Nami/Skins/Base/Images/TFT13_Nami.TFT_Set13.tex",
       "name": "Nami",
-      "role": "APCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Nami/Skins/Base/Images/TFT13_Nami_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 25,
@@ -9121,7 +9235,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Corki/Skins/Base/Images/TFT13_Corki.TFT_Set13.tex",
       "name": "Corki",
-      "role": "ADCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Corki/Skins/Base/Images/TFT13_Corki_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 30,
@@ -9240,7 +9353,13 @@
       "_key": "TFT13_Corki",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Corki.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Corki.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_corki.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_corki.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "stats": [
+          "damage"
+        ]
+      }
     },
     {
       "ability": {
@@ -9331,7 +9450,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Garen/Skins/Base/Images/TFT13_Garen.TFT_Set13.tex",
       "name": "Garen",
-      "role": "ADTank",
       "squareIcon": "ASSETS/Characters/TFT13_Garen/Skins/Base/Images/TFT13_Garen_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 60,
@@ -9493,7 +9611,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Vex/Skins/Base/Images/TFT13_Vex.TFT_Set13.tex",
       "name": "Vex",
-      "role": "APCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Vex/Skins/Base/Images/TFT13_Vex_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 15,
@@ -9564,11 +9681,18 @@
       "_key": "TFT13_Vex",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Vex.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Vex.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_vex.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_vex.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "Damage",
+          "SecondaryDamage"
+        ]
+      }
     },
     {
       "ability": {
-        "desc": "For 6 seconds, attacks also cause adjacent enemies to bleed for <physicalDamage>[ 91 / 138 / 238 ]&nbsp;(%i:scaleAD%)</physicalDamage> physical damage over 1&nbsp;second.",
+        "desc": "For 6 seconds, attacks also cause adjacent enemies to bleed for <physicalDamage>[ 93 / 142 / 245 ]&nbsp;(%i:scaleAD%)</physicalDamage> physical damage over 1&nbsp;second.",
         "icon": "ASSETS/Characters/TFT13_Nocturne/HUD/Icons2D/TFT13_Nocturne_EyeOfTheStorm.TFT_Set13.tex",
         "name": "Overdrive Blades",
         "variables": [
@@ -9639,14 +9763,13 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Nocturne/Skins/Base/Images/TFT13_Nocturne.TFT_Set13.tex",
       "name": "Nocturne",
-      "role": "ADReaper",
       "squareIcon": "ASSETS/Characters/TFT13_Nocturne/Skins/Base/Images/TFT13_Nocturne_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 45,
         "attackSpeed": 0.800000011920929,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 63,
+        "damage": 65,
         "hp": 700,
         "initialMana": 0,
         "magicResist": 45,
@@ -9735,10 +9858,10 @@
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Nocturne.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Nocturne.png",
       "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_nocturne.tft_set13.png",
-      "balance": -1,
+      "balance": 1,
       "diff": {
         "stats": [
-          "damage"
+          "attackSpeed"
         ]
       }
     },
@@ -9803,7 +9926,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Darius/Skins/Base/Images/TFT13_Darius.TFT_Set13.tex",
       "name": "Darius",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Darius/Skins/Base/Images/TFT13_Darius_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
@@ -9886,7 +10008,13 @@
       "_key": "TFT13_Darius",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Darius.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Darius.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_darius.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_darius.tft_set13.png",
+      "balance": -1,
+      "diff": {
+        "stats": [
+          "hp"
+        ]
+      }
     },
     {
       "ability": {
@@ -9997,7 +10125,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Irelia/Skins/Base/Images/TFT13_Irelia.TFT_Set13.tex",
       "name": "Irelia",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Irelia/Skins/Base/Images/TFT13_Irelia_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 40,
@@ -10128,11 +10255,18 @@
       "_key": "TFT13_Irelia",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Irelia.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Irelia.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_irelia.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_irelia.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "HEROBaseDashDamage",
+          "HEROSpellAPBase"
+        ]
+      }
     },
     {
       "ability": {
-        "desc": "<spellPassive>Freed:</spellPassive> Charge through the nearest enemy, dealing <physicalDamage>74&nbsp;(%i:scaleAD%)</physicalDamage> physical damage to all enemies&nbsp;hit. <br><br><spellActive>Active:</spellActive> Gain <TFTBonus>[ 259 / 259 / 111 ]&nbsp;(%i:scaleAP%)</TFTBonus> Shield for 3 seconds. Stun enemies in a line on target for 1 seconds and deal <physicalDamage>222&nbsp;(%i:scaleAD%)</physicalDamage> physical damage to&nbsp;them.",
+        "desc": "<spellPassive>Freed:</spellPassive> Charge through the nearest enemy, dealing <physicalDamage>74&nbsp;(%i:scaleAD%)</physicalDamage> physical damage to all enemies&nbsp;hit. <br><br><spellActive>Active:</spellActive> Gain <TFTBonus>259&nbsp;(%i:scaleAP%)</TFTBonus> Shield for 5 seconds. Stun enemies in a line on target for 1.5 seconds and deal <physicalDamage>222&nbsp;(%i:scaleAD%)</physicalDamage> physical damage to&nbsp;them.",
         "icon": "ASSETS/Characters/TFT13_Sion/HUD/Icons2D/SionSpell_1.TFT_Set13.tex",
         "name": "Decimating Smash",
         "variables": [
@@ -10178,7 +10312,7 @@
               175,
               175,
               175,
-              75,
+              175,
               175,
               175,
               175
@@ -10235,13 +10369,13 @@
           {
             "name": "ShieldDuration",
             "value": [
-              3,
-              3,
-              3,
-              3,
-              3,
-              3,
-              3
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
             ]
           },
           {
@@ -10259,13 +10393,13 @@
           {
             "name": "StunDuration",
             "value": [
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1
+              1.5,
+              1.5,
+              1.5,
+              1.5,
+              1.5,
+              1.5,
+              1.5
             ]
           },
           {
@@ -10347,7 +10481,6 @@
       "cost": 11,
       "icon": "ASSETS/Characters/TFT13_Sion/Skins/Base/Images/TFT13_Sion_splash_centered_new.TFT_Set13.tex",
       "name": "Sion",
-      "role": null,
       "squareIcon": "ASSETS/Characters/TFT13_Sion/Skins/Base/Images/TFT13_Sion_splash_tile_0_mobile.TFT_Set13.tex",
       "stats": {
         "armor": 0,
@@ -10409,7 +10542,7 @@
                 175,
                 175,
                 175,
-                75,
+                175,
                 175,
                 175,
                 175
@@ -10466,13 +10599,13 @@
             {
               "name": "ShieldDuration",
               "value": [
-                3,
-                3,
-                3,
-                3,
-                3,
-                3,
-                3
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
               ]
             },
             {
@@ -10490,13 +10623,13 @@
             {
               "name": "StunDuration",
               "value": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
+                1.5,
+                1.5,
+                1.5,
+                1.5,
+                1.5,
+                1.5,
+                1.5
               ]
             },
             {
@@ -10577,7 +10710,14 @@
       "_key": "TFT13_Sion",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tft13_sion_splash_centered_new.tft_set13.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Sion.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_sion_splash_centered_new.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_sion_splash_centered_new.tft_set13.png",
+      "balance": 0,
+      "diff": {
+        "ability.variables": [
+          "ChargeDamageAmp",
+          "PercentReviveHealth"
+        ]
+      }
     },
     {
       "ability": {
@@ -10652,7 +10792,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Ambessa/Skins/Base/Images/TFT13_Ambessa.TFT_Set13.tex",
       "name": "Ambessa",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Ambessa/Skins/Base/Images/TFT13_Ambessa_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -10751,7 +10890,16 @@
       "_key": "TFT13_Ambessa",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Ambessa.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Ambessa.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_ambessa.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_ambessa.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "SlamDamageAD"
+        ],
+        "stats": [
+          "mana"
+        ]
+      }
     },
     {
       "ability": {
@@ -10838,7 +10986,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Zyra/Skins/Base/Images/TFT13_Zyra.TFT_Set13.tex",
       "name": "Zyra",
-      "role": "APCasterHighMana",
       "squareIcon": "ASSETS/Characters/TFT13_Zyra/Skins/Base/Images/TFT13_Zyra_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 20,
@@ -10945,7 +11092,13 @@
       "_key": "TFT13_Zyra",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Zyra.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Zyra.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_zyra.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_zyra.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "AOEDamage"
+        ]
+      }
     },
     {
       "ability": {
@@ -11000,7 +11153,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Gangplank/Skins/Base/Images/TFT13_Gangplank.TFT_Set13.tex",
       "name": "Gangplank",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Gangplank/Skins/Base/Images/TFT13_Gangplank_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 0,
@@ -11079,7 +11231,13 @@
       "_key": "TFT13_Gangplank",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Gangplank.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Gangplank.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_gangplank.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_gangplank.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "PercentAttackDamage"
+        ]
+      }
     },
     {
       "ability": {
@@ -11130,7 +11288,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Leona/Skins/Base/Images/TFT13_Leona.TFT_Set13.tex",
       "name": "Leona",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Leona/Skins/Base/Images/TFT13_Leona_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 50,
@@ -11276,7 +11433,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_KogMaw/Skins/Base/Images/TFT13_KogMaw.TFT_Set13.tex",
       "name": "Kog'Maw",
-      "role": "APCarry",
       "squareIcon": "ASSETS/Characters/TFT13_KogMaw/Skins/Base/Images/TFT13_KogMaw_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 25,
@@ -11371,7 +11527,14 @@
       "_key": "TFT13_KogMaw",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/KogMaw.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_KogMaw.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_kogmaw.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_kogmaw.tft_set13.png",
+      "balance": 0,
+      "diff": {
+        "ability.variables": [
+          "ModifiedDamage",
+          "RangeIncreaseNumAttacks"
+        ]
+      }
     },
     {
       "ability": {
@@ -11434,7 +11597,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_TwistedFate/Skins/Base/Images/TFT13_TwistedFate.TFT_Set13.tex",
       "name": "Twisted Fate",
-      "role": "APCasterHighMana",
       "squareIcon": "ASSETS/Characters/TFT13_TwistedFate/Skins/Base/Images/TFT13_TwistedFate_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 25,
@@ -11517,7 +11679,14 @@
       "_key": "TFT13_TwistedFate",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/TwistedFate.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_TwistedFate.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_twistedfate.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_twistedfate.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "ModifiedHeal",
+          "YellowDamage"
+        ]
+      }
     },
     {
       "ability": {
@@ -11580,7 +11749,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Lux/Skins/Base/Images/TFT13_Lux.TFT_Set13.tex",
       "name": "Lux",
-      "role": "APCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Lux/Skins/Base/Images/TFT13_Lux_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 20,
@@ -11834,7 +12002,6 @@
       "cost": 5,
       "icon": "ASSETS/Characters/TFT13_Mordekaiser/Skins/Base/Images/TFT13_Mordekaiser.TFT_Set13.tex",
       "name": "Mordekaiser",
-      "role": "APFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Mordekaiser/Skins/Base/Images/TFT13_Mordekaiser_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 70,
@@ -12025,7 +12192,13 @@
       "_key": "TFT13_Mordekaiser",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Mordekaiser.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Mordekaiser.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_mordekaiser.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_mordekaiser.tft_set13.png",
+      "balance": 0,
+      "diff": {
+        "ability.variables": [
+          "ModifiedSecondaryDamage"
+        ]
+      }
     },
     {
       "ability": {
@@ -12076,7 +12249,6 @@
       "cost": 1,
       "icon": "ASSETS/Characters/TFT13_Morgana/Skins/Base/Images/TFT13_Morgana.TFT_Set13.tex",
       "name": "Morgana",
-      "role": "APCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Morgana/Skins/Base/Images/TFT13_Morgana_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 20,
@@ -12147,7 +12319,13 @@
       "_key": "TFT13_Morgana",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Morgana.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Morgana.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_morgana.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_morgana.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "ability.variables": [
+          "Damage"
+        ]
+      }
     },
     {
       "ability": {
@@ -12210,7 +12388,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Tristana/Skins/Base/Images/TFT13_Tristana.TFT_Set13.tex",
       "name": "Tristana",
-      "role": "ADCaster",
       "squareIcon": "ASSETS/Characters/TFT13_Tristana/Skins/Base/Images/TFT13_Tristana_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 20,
@@ -12293,7 +12470,13 @@
       "_key": "TFT13_Tristana",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tft13_tristana.tft_set13.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Tristana.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_tristana.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_tristana.tft_set13.png",
+      "balance": 1,
+      "diff": {
+        "stats": [
+          "attackSpeed"
+        ]
+      }
     },
     {
       "ability": {
@@ -12368,7 +12551,6 @@
       "cost": 3,
       "icon": "ASSETS/Characters/TFT13_Swain/Skins/Base/Images/TFT13_Swain.TFT_Set13.tex",
       "name": "Swain",
-      "role": "APTank",
       "squareIcon": "ASSETS/Characters/TFT13_Swain/Skins/Base/Images/TFT13_Swain_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 0,
@@ -12467,7 +12649,14 @@
       "_key": "TFT13_Swain",
       "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Swain.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Swain.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_swain.tft_set13.png"
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_swain.tft_set13.png",
+      "balance": 0,
+      "diff": {
+        "ability.variables": [
+          "Heal",
+          "HealPerSecond"
+        ]
+      }
     },
     {
       "ability": {
@@ -12566,7 +12755,6 @@
       "cost": 2,
       "icon": "ASSETS/Characters/TFT13_Urgot/Skins/Base/Images/TFT13_Urgot.TFT_Set13.tex",
       "name": "Urgot",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Urgot/Skins/Base/Images/TFT13_Urgot_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 45,
@@ -12743,7 +12931,6 @@
       "cost": 4,
       "icon": "ASSETS/Characters/TFT13_Zoe/Skins/Base/Images/TFT13_Zoe.TFT_Set13.tex",
       "name": "Zoe",
-      "role": "APCasterHighMana",
       "squareIcon": "ASSETS/Characters/TFT13_Zoe/Skins/Base/Images/TFT13_Zoe_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 30,
@@ -12828,7 +13015,6 @@
       "cost": 11,
       "icon": "ASSETS/Characters/TFT13_JayceSummon/Skins/Base/Images/TFT13_JayceSummon.TFT_Set13.tex",
       "name": "Hextech Forge",
-      "role": null,
       "squareIcon": "ASSETS/Characters/TFT13_JayceSummon/Skins/Base/Images/TFT13_JayceSummon_Mobile.TFT_Set13.tex",
       "stats": {
         "armor": 0,
@@ -12880,7 +13066,6 @@
       "cost": 0,
       "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT5_EmblemArmoryKey.tex",
       "name": "Tome of Traits",
-      "role": null,
       "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT5_DraconicEgg_Mobile.tex",
       "stats": {
         "armor": 10,
@@ -12945,7 +13130,6 @@
       "cost": 0,
       "icon": null,
       "name": "Completed Item Anvil",
-      "role": null,
       "squareIcon": null,
       "stats": {
         "armor": 10,
@@ -13010,7 +13194,6 @@
       "cost": 0,
       "icon": null,
       "name": "Component Anvil",
-      "role": null,
       "squareIcon": null,
       "stats": {
         "armor": 10,
@@ -13075,7 +13258,6 @@
       "cost": 0,
       "icon": null,
       "name": "Artifact Item Anvil",
-      "role": null,
       "squareIcon": null,
       "stats": {
         "armor": 10,
@@ -13140,7 +13322,6 @@
       "cost": 0,
       "icon": null,
       "name": "Support item anvil",
-      "role": null,
       "squareIcon": null,
       "stats": {
         "armor": 10,
@@ -13182,7 +13363,7 @@
     },
     {
       "ability": {
-        "desc": "<spellPassive>Passive:</spellPassive> Attacks are replaced with a Death Ray that deals <magicDamage>[ 50 / 180 / 2000 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage and <trueDamage>[ 25 / 90 / 1000 ]</trueDamage> true damage in a 2-hex line. Enemies hit are 30% <TFTKeyword>Sundered</TFTKeyword> and <TFTKeyword>Shredded</TFTKeyword> for 5&nbsp;seconds.<br><br><spellActive>Active:</spellActive> Summon a chaos storm that engulfs the battlefield, knocking up ALL enemies into the air for [ 2 / 3 / 30 ] seconds. At the end of the duration, slam them to the ground, dealing <magicDamage>[ 100 / 300 / 9999 ]&nbsp;(%i:scaleAP%)</magicDamage> plus <magicDamage>[ 8 / 20 / 100 ]%</magicDamage> of their max Health as magic&nbsp;damage.<br><br><rules><tftbold>Sunder:</tftbold> Reduce Armor,</rules> <rules><tftbold>Shred:</tftbold> Reduce Magic Resist</rules>",
+        "desc": "<spellPassive>Passive:</spellPassive> Attacks are replaced with a Death Ray that deals <magicDamage>[ 70 / 175 / 2000 ]&nbsp;(%i:scaleAP%)</magicDamage> magic damage and <trueDamage>[ 35 / 90 / 1000 ]</trueDamage> true damage in a 2-hex line. Enemies hit are 30% <TFTKeyword>Sundered</TFTKeyword> and <TFTKeyword>Shredded</TFTKeyword> for 5&nbsp;seconds.<br><br><spellActive>Active:</spellActive> Summon a chaos storm that engulfs the battlefield, knocking up ALL enemies into the air for [ 2 / 3 / 30 ] seconds. At the end of the duration, slam them to the ground, dealing <magicDamage>[ 120 / 300 / 9999 ]&nbsp;(%i:scaleAP%)</magicDamage> plus <magicDamage>[ 8 / 20 / 100 ]%</magicDamage> of their max Health as magic&nbsp;damage.<br><br><rules><tftbold>Sunder:</tftbold> Reduce Armor,</rules> <rules><tftbold>Shred:</tftbold> Reduce Magic Resist</rules>",
         "icon": "ASSETS/Characters/TFT13_Viktor/HUD/Icons2D/Viktor_Passive.TFT_Set13_Evolved.tex",
         "name": "Chaos Storm",
         "variables": [
@@ -13202,8 +13383,8 @@
             "name": "ModifiedDeathRayDamage",
             "value": [
               40,
-              50,
-              180,
+              70,
+              175,
               2000,
               9001,
               20,
@@ -13214,7 +13395,7 @@
             "name": "LaserTrueDamage",
             "value": [
               0,
-              25,
+              35,
               90,
               1000,
               9001,
@@ -13250,7 +13431,7 @@
             "name": "SpellDamage",
             "value": [
               150,
-              100,
+              120,
               300,
               9999,
               9999,
@@ -13277,7 +13458,6 @@
       "cost": 6,
       "icon": "ASSETS/Characters/TFT13_Viktor/Skins/Base/Images/TFT13_Viktor.TFT_Set13_Evolved.tex",
       "name": "Viktor",
-      "role": "APCasterViktorS13",
       "squareIcon": "ASSETS/Characters/TFT13_Viktor/Skins/Base/Images/TFT13_Viktor_Mobile.TFT_Set13_Evolved.tex",
       "stats": {
         "armor": 40,
@@ -13318,8 +13498,8 @@
               "name": "LaserMagicDamage",
               "value": [
                 40,
-                50,
-                180,
+                70,
+                175,
                 2000,
                 9001,
                 20,
@@ -13330,7 +13510,7 @@
               "name": "LaserTrueDamage",
               "value": [
                 0,
-                25,
+                35,
                 90,
                 1000,
                 9001,
@@ -13366,7 +13546,7 @@
               "name": "SpellDamage",
               "value": [
                 150,
-                100,
+                120,
                 300,
                 9999,
                 9999,
@@ -13390,17 +13570,9 @@
         }
       },
       "_key": "TFT13_Viktor",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Viktor.png",
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tft13_viktor.tft_set13_evolved.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Viktor.png",
-      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_viktor.tft_set13_evolved.png",
-      "balance": -1,
-      "diff": {
-        "ability.variables": [
-          "ModifiedDeathRayDamage",
-          "LaserTrueDamage",
-          "SpellDamage"
-        ]
-      }
+      "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_viktor.tft_set13_evolved.png"
     },
     {
       "ability": {
@@ -13575,7 +13747,6 @@
       "cost": 6,
       "icon": "ASSETS/Characters/TFT13_MissMage/Skins/Base/Images/TFT13_MissMage.TFT_Set13_Evolved.tex",
       "name": "Mel",
-      "role": "APReaper",
       "squareIcon": "ASSETS/Characters/TFT13_MissMage/Skins/Base/Images/TFT13_MissMage_Mobile.TFT_Set13_Evolved.tex",
       "stats": {
         "armor": 60,
@@ -13764,7 +13935,7 @@
         }
       },
       "_key": "TFT13_MissMage",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/MissMage.png",
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tft13_missmage.tft_set13_evolved.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_MissMage.png",
       "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_missmage.tft_set13_evolved.png"
     },
@@ -13877,14 +14048,13 @@
       "cost": 6,
       "icon": "ASSETS/Characters/TFT13_Warwick/Skins/Base/Images/TFT13_Warwick.TFT_Set13_Evolved.tex",
       "name": "Warwick",
-      "role": "ADFighter",
       "squareIcon": "ASSETS/Characters/TFT13_Warwick/Skins/Base/Images/TFT13_Warwick_Mobile.TFT_Set13_Evolved.tex",
       "stats": {
         "armor": 70,
         "attackSpeed": 0.8999999761581421,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 110,
+        "damage": 100,
         "hp": 2100,
         "initialMana": 60,
         "magicResist": 70,
@@ -14006,7 +14176,7 @@
         }
       },
       "_key": "TFT13_Warwick",
-      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/Warwick.png",
+      "imageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tft13_warwick.tft_set13_evolved.png",
       "skillImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/skills/TFT13_Warwick.png",
       "tileImageUrl": "https://s-tft-api.op.gg/img/set/13/tft-champion/tiles/tft13_warwick.tft_set13_evolved.png"
     }
